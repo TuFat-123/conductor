@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Websocket MIDI</title>
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div class="container">
+    <div class="e8navbar">
+        <div class="nav-item active" data-select="commands" data-order="1">COMMANDS</div>
+        <div class="nav-item inactive" data-select="solotacet" data-order="2">SOLO / TACET</div>
+        <div class="nav-item inactive" data-select="chords" data-order="3">CHORDS</div>
+        <div class="nav-item inactive" data-select="media" data-order="4">MEDIA</div>
+        <div class="nav-item inactive" data-select="lyrics" data-order="5">LYRICS</div>
+        <div class="nav-item inactive" data-select="notes" data-order="6">NOTES</div>
+        <div class="nav-item inactive" data-select="setlist" data-order="7">SETLIST</div>
+    </div>
+    <div class="clearfix"></div>
+        <!-- SOLO TACET CONTAINER -->
+        <div class="selected-container" data-page="commands" data-data="solotacet">
+            <div class="h2">SOLO / TACET</div>
+            <div class="command-items-wrapper">
+                <div class="command-item" data-page="commands" data-command="crescendo">
+                    <p>></p>
+                    <p>crescendo</p>
+                </div>
+                <div class="command-item" data-page="commands" data-command="decrescendo">
+                    <p><</p>
+                    <p>decrescendo</p>
+                </div>
+                <div class="command-item" data-page="commands" data-command="piano">
+                    <p>p</p>
+                    <p>piano</p>
+                </div>
+                <div class="command-item" data-page="commands" data-command="fortissimo">
+                    <p>ff</p>
+                    <p>fortissimo</p>
+                </div>
+                <div class="command-item" data-page="commands" data-command="mehr">
+                    <p>&uarr;</p>
+                    <p>mehr</p>
+                </div>
+                <div class="command-item" data-page="commands" data-command="weniger">
+                    <p>&darr;</p>
+                    <p>weniger</p>
+                </div>
+                <div class="command-item" data-page="commands" data-command="schneller">
+                    <p>&#9658;&#9658;</p>
+                    <p>schneller</p>
+                </div>
+                <div class="command-item" data-page="commands" data-command="langsamer">
+                    <p>&#9664;&#9664;</p>
+                    <p>langsamer</p>
+                </div>
+            </div>
+        </div>
+        <div class="selected-container" data-data="chords"></div>
+        <div class="selected-container" data-data="media"></div>
+        <div class="selected-container" data-data="lyrics"></div>
+        <div class="selected-container" data-data="notes"></div>
+        <div class="selected-container" data-data="setlist"></div>
+    </div>
+
+</body>
+</html>
